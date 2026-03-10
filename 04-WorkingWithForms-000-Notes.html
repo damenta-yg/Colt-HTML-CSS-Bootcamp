@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <form>
+      <!-- input type text -->
+      <!-- label need to match with ID of elements -->
+      <label for="city">Enter your city</label>
+      <input type="text" name="city" placeholder="Your city..." />
+      <!-- button -->
+      <button type="submit">Sign In</button>
+      <button>Our First Button</button>
+      <!-- text area -->
+      <textarea
+        name="textareatest"
+        id="textareatest"
+        rows="10"
+        cols="10"
+      ></textarea>
+      <!-- range -->
+      <input type="range" min="0" max="24" name="volume" step="2" />
+      <!-- checkbox -->
+      <input type="checkbox" name="confirmation" id="confirmation" />
+      <label for="confirmation">Are you sure?</label>
+      <!-- select input type, combining select and option -->
+      <label for="pets">Please select your pets</label>
+      <select name="pets" id="pets">
+        <option value="1">dog</option>
+        <option value="2">you</option>
+        <option value="3">him</option>
+      </select>
+      <input type="radio" id="radioTest1" name="radioTest" value="1" />
+      <label for="radioTest1">One</label>
+      <input type="radio" id="radioTest2" name="radioTest" value="2" />
+      <label for="radioTest2">Two</label>
+      <input type="radio" id="radioTest3" name="radioTest" value="3" />
+      <label for="radioTest3">Three</label>
+      <input type="radio" id="radioTest4" name="radioTest" value="4" />
+      <label for="radioTest4">Four</label>
+    </form>
+  </body>
+</html>
