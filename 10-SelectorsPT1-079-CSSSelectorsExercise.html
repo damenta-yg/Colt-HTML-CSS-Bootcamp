@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* universal selector */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        border: 1px solid green;
+      }
+      /* attribute selector */
+      a[href*="wikipedia"] {
+        color: red;
+      }
+      /* grouping selector */
+      h1,
+      a {
+        font-size: 48px;
+      }
+      /* descendant combinator affecting all of the parent descendant */
+      .div1 p {
+        color: blue;
+      }
+      /* child combinator -> affecting only direct child */
+      .div1 > p {
+        color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ini adalah element</h1>
+    <a href="https://www.wikipedia.org">Ini adalah website wikipedia</a>
+    <div class="div1">
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <div class="div2">
+        <p>Paragraph 3</p>
+      </div>
+    </div>
+  </body>
+</html>
